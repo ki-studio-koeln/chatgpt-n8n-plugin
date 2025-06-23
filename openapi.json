@@ -1,0 +1,21 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "n8n Webhook Trigger",
+    "version": "1.0.0",
+    "description": "Einfacher Endpunkt, um über ChatGPT dein n8n-Webhook auszulösen"
+  },
+  "paths": {
+    "/trigger": {
+      "post": {
+        "operationId": "triggerWebhook",
+        "summary": "Löst den n8n-Workflow aus",
+        "responses": {
+          "200": {
+            "description": "Webhook erfolgreich getriggert"
+          }
+        }
+      }
+    }
+  }
+}
